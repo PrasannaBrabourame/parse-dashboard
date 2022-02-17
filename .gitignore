@@ -1,7 +1,7 @@
 .DS_Store
 node_modules/
-bundles/
 PIG/bundles/
+production/bundles
 Parse-Dashboard/parse-dashboard-config.json
 parse-dashboard-config.json
 npm-debug.log
