@@ -5,10 +5,10 @@
  * This source code is licensed under the license found in the LICENSE file in
  * the root directory of this source tree.
  */
-import CSRFInput  from 'components/CSRFInput/CSRFInput.react';
-import Icon       from 'components/Icon/Icon.react';
-import React      from 'react';
-import styles     from 'components/LoginForm/LoginForm.scss';
+import CSRFInput from 'components/CSRFInput/CSRFInput.react';
+import Icon from 'components/Icon/Icon.react';
+import React from 'react';
+import styles from 'components/LoginForm/LoginForm.scss';
 import baseStyles from 'stylesheets/base.scss';
 
 // Class-style component, because we need refs
@@ -18,9 +18,10 @@ export default class LoginForm extends React.Component {
     this.formRef = React.createRef();
   }
   render() {
+    const customConfig = window.CUSTOM_CONFIG;
     return (
       <div className={styles.login} style={{ marginTop: this.props.marginTop || '-220px' }}>
-        <Icon width={80} height={80} name='infinity' fill='#093A59' />
+        <img src={'appicons/' + customConfig.iconName} width={customConfig.loginIconWidth} height={customConfig.loginIconHeight} alt="Custom BRAND icon" />
         <form method='post' ref={this.formRef} action={this.props.endpoint} className={styles.form}>
           <CSRFInput />
           <div className={styles.header}>{this.props.header}</div>

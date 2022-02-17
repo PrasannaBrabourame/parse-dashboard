@@ -183,13 +183,15 @@ module.exports = function(config, options) {
           ${errors.join(' ')}
         </div>`
       }
+      let customConfig = config.customConfig
       res.send(`<!DOCTYPE html>
         <head>
           <link rel="shortcut icon" type="image/x-icon" href="${mountPath}favicon.ico" />
           <base href="${mountPath}"/>
           <script>
-            PARSE_DASHBOARD_PATH = "${mountPath}";
-          </script>
+          PARSE_DASHBOARD_PATH = "${mountPath}";
+          CUSTOM_CONFIG=${JSON.stringify(customConfig)};
+        </script>
         </head>
         <html>
           <title>Parse Dashboard</title>
@@ -211,12 +213,14 @@ module.exports = function(config, options) {
       if (users && req.user && req.user.matchingUsername ) {
         res.append('username', req.user.matchingUsername);
       }
+      let customConfig = config.customConfig
       res.send(`<!DOCTYPE html>
         <head>
           <link rel="shortcut icon" type="image/x-icon" href="${mountPath}favicon.ico" />
           <base href="${mountPath}"/>
           <script>
             PARSE_DASHBOARD_PATH = "${mountPath}";
+            CUSTOM_CONFIG=${JSON.stringify(customConfig)};
           </script>
         </head>
         <html>

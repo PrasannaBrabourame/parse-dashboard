@@ -18,7 +18,7 @@ $footerHeight: 36px;
   top: 0;
   left: 0;
   bottom: 0;
-  background: #0c5582;
+  background: #ee616b;
   color: #fff;
   z-index: 100;
 
@@ -52,7 +52,7 @@ $footerHeight: 36px;
 .footer {
   @include DosisFont;
   position: absolute;
-  background: #05283c;
+  background: #f6b3b7;
   height: $footerHeight;
   line-height: 18px;
   padding: 9px 0;
@@ -86,7 +86,7 @@ $footerHeight: 36px;
 }
 
 .header {
-  background: #05283c;
+  background: #f6b3b7;
   height: $headerHeight;
   padding: 10px 14px;
 
@@ -100,7 +100,7 @@ $footerHeight: 36px;
 .currentApp, .menuRow {
   @include ellipsis();
   display: block;
-  background: #094162;
+  background: #f39298;
   height: $sidebarMenuItemHeight;
   padding: 10px 14px;
 
@@ -112,7 +112,7 @@ $footerHeight: 36px;
 
 .menuRow {
   cursor: pointer;
-  border-bottom: 1px solid #0c5582;
+  border-bottom: 1px solid #ee616b;
 
   > *:first-child {
     display: inline-block;
@@ -167,11 +167,11 @@ $footerHeight: 36px;
 
 .appsMenu {
   overflow: auto;
-  background: #094162;
+  background: #f39298;
   width: 300px;
 
   .menuRow:hover {
-    background: #0c5582;
+    background: #ee616b;
   }
 
   .currentApp {
@@ -198,13 +198,13 @@ $footerHeight: 36px;
   @include DosisFont;
   height: $menuSectionHeight;
   line-height: 24px;
-  background: #0c5582;
+  background: #ee616b;
   color: #84A5BC;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 8px;
   padding: 0 14px;
-  border-bottom: 1px solid #094162;
+  border-bottom: 1px solid #f39298;
 }
 
 .createApp {
@@ -221,12 +221,12 @@ $footerHeight: 36px;
   font-size: 12px;
 
   &:hover {
-    background: #0c5582;
+    background: #ee616b;
   }
 }
 
 .section {
-  background: #0c5582;
+  background: #ee616b;
 
   :global(.icon) {
     margin-right: 14px;
@@ -234,12 +234,12 @@ $footerHeight: 36px;
 }
 
 .active {
-  background: #159cee;
+  background: #e32011;
 
   .section_header{
     font-weight: 700;
     &:hover{
-      background: #159cee;
+      background: #e32011;
     }
   }
 }
@@ -267,7 +267,7 @@ $footerHeight: 36px;
 }
 
 .section_contents {
-  background: #0e69a0;
+  background: #ee616b;
   padding: 16px 14px 16px 50px;
 }
 
@@ -305,7 +305,7 @@ a.subitem {
   border-radius: 3px;
 
   &:hover {
-    background: #094162;
+    background: #f39298;
   }
 }
 
@@ -339,7 +339,7 @@ a.subitem {
 
 .more {
   svg {
-    fill: #0C5582;
+    fill: #ee616b;
     transition: fill 0.2s ease-in;
   }
 
@@ -401,7 +401,7 @@ a.subitem {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #094162;
+  background-color: #f39298;
 
   svg {
     cursor: pointer;

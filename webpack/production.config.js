@@ -14,6 +14,6 @@ configuration.entry = {
   PIG: './parse-interface-guide/index.js',
   quickstart: './quickstart/index.js',
 };
-configuration.output.path = require('path').resolve('./production/bundles');
+configuration.output.path = require('path').resolve('./Parse-Dashboard/public/bundles');
 
 module.exports = configuration;
