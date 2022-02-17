@@ -1,3 +1,29 @@
+
 {
-  
+  "apps": [
+    {
+      "serverURL": "http://localhost:1440/api/v1",
+      "appId": "cardspe202201",
+      "masterKey": "2qSN9rPfy56DCMpRvrZW",
+      "appName": "CARDSPE",
+      "primaryBackgroundColor": "",
+      "secondaryBackgroundColor": ""
+    }
+  ],
+  "users": [
+    {
+      "user": "user1",
+      "pass": "pass"
+    },
+    {
+      "user": "user2",
+      "pass": "pass"
+    }
+  ],
+  "customConfig": {
+    "iconName": "cardspe-logo.png",
+    "loginIconWidth": 162,
+    "loginIconHeight": 57
+  },
+  "iconsFolder": "icons"
 }
